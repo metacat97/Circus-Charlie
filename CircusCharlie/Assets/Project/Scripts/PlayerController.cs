@@ -12,9 +12,9 @@ public class PlayerController : MonoBehaviour
     //점프 횟수 
     private int jumpCount = 0;
     //바닥에 닿았는지
-    private bool isGrounded;
+    //private bool isGrounded;
     //오른쪽으로 가고 있는지
-    private bool isGoing = false;
+    //private bool isGoing = false;
     // 사망상태
     private bool isDead = false;
 
@@ -102,16 +102,16 @@ public class PlayerController : MonoBehaviour
     {
         //바닥에 닿았음을 감지하는 처리
         //isGorunded를 true로 변경하고, 누적 점프 횟수를 0으로 리셋
-        isGrounded = true;
-        isGoing = true;
+        //isGrounded = true;
+        //isGoing = true;
         jumpCount = 0;
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
         //바닥에서 벗어났음을 감지하는 처리.      
-        isGrounded = false;
-        isGoing = false;
+        //isGrounded = false;
+        //isGoing = false;
     }
 
 

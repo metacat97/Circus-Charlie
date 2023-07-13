@@ -15,7 +15,12 @@ public static partial class GFunc
 Debug.Log(message);
 #endif
     }
-
+    public static void LogWarning(object message)
+    {
+#if DEBUG_MODE
+        Debug.LogWarning(message);
+#endif
+    }
     [System.Diagnostics.Conditional("DEBUG_MODE")]
     public static void Assert(bool condition)
     {

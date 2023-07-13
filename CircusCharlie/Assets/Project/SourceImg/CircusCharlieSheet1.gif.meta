@@ -1268,7 +1268,7 @@ TextureImporter:
         serializedVersion: 2
         x: 81
         y: 127
-        width: 24
+        width: 12
         height: 64
       alignment: 9
       pivot: {x: 0, y: 0}
@@ -1289,7 +1289,7 @@ TextureImporter:
         serializedVersion: 2
         x: 109
         y: 127
-        width: 24
+        width: 12
         height: 64
       alignment: 9
       pivot: {x: 0, y: 0}
@@ -1310,7 +1310,7 @@ TextureImporter:
         serializedVersion: 2
         x: 136
         y: 127
-        width: 24
+        width: 12
         height: 80
       alignment: 9
       pivot: {x: 0, y: 0}
@@ -1331,7 +1331,7 @@ TextureImporter:
         serializedVersion: 2
         x: 165
         y: 127
-        width: 24
+        width: 12
         height: 80
       alignment: 9
       pivot: {x: 0, y: 0}
@@ -1476,10 +1476,10 @@ TextureImporter:
       name: CircusCharlieSheet1_64
       rect:
         serializedVersion: 2
-        x: 5
-        y: 25
-        width: 47
-        height: 32
+        x: 121
+        y: 127
+        width: 12
+        height: 64
       alignment: 9
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1602,10 +1602,10 @@ TextureImporter:
       name: CircusCharlieSheet1_70
       rect:
         serializedVersion: 2
-        x: 56
-        y: 25
-        width: 45
-        height: 31
+        x: 93
+        y: 127
+        width: 12
+        height: 64
       alignment: 9
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1623,10 +1623,10 @@ TextureImporter:
       name: CircusCharlieSheet1_71
       rect:
         serializedVersion: 2
-        x: 106
-        y: 25
-        width: 48
-        height: 29
+        x: 148
+        y: 127
+        width: 12
+        height: 80
       alignment: 9
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1644,10 +1644,10 @@ TextureImporter:
       name: CircusCharlieSheet1_72
       rect:
         serializedVersion: 2
-        x: 162
-        y: 25
-        width: 48
-        height: 29
+        x: 177
+        y: 127
+        width: 12
+        height: 80
       alignment: 9
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

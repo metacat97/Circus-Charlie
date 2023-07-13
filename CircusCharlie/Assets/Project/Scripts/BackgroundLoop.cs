@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class BackgroundLoop : MonoBehaviour
@@ -21,15 +22,26 @@ public class BackgroundLoop : MonoBehaviour
     private void Update()
     {
         //현재 위치가 원점에서 왼쪽으로 width 이상 이동했을 떄 위치를 재배치
+        
         if (transform.position.x <= -width *2f)
         {
-            Reposition();
+            RepositionRight();
+        }
+        else if (transform.position.x >= width *2f)
+        {
+            RepositionLeft();
         }
     }
 
-    private void Reposition()
+    private void RepositionRight()
     {
         Vector2 offset = new Vector2((width * 4f), 0);
         transform.position = (Vector2) transform.position + offset;
     }
+    private void RepositionLeft()
+    {
+        Vector2 offset = new Vector2((width * 4f), 0);
+        transform.position = (Vector2)transform.position - offset;
+    }
+
 }
