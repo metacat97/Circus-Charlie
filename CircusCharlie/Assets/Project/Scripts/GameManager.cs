@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     //public Text scoreText; //점수 출력 UI텍스트
     public TMP_Text scoreText;
     public GameObject gameoverUI; // 게임오버 시 활성화할 UI게임 오브젝트
-
+    //public bool SpeedBoolCheck; //스피드 체크  
     private int score = 0; // 게임 점수
 
     // 게임 시작과 동시에 싱글턴을 구성
@@ -60,4 +60,9 @@ public class GameManager : MonoBehaviour
         isGameover = true;
         gameoverUI.SetActive(true);
     }
+   
+    //public void SetSpeed(bool boolchk)
+    //{
+    //    SpeedBoolCheck = boolchk;
+    //}
 }

@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     //private bool isGoing = false;
     // 사망상태
     private bool isDead = false;
+    private bool isGoal = false;
 
     //사용할 리지드 바디 컴포넌트
     private Rigidbody2D playerRigidbody;
@@ -46,6 +47,10 @@ public class PlayerController : MonoBehaviour
         if (isDead)
         {
             //사망 시 처리를 더 이상 진행하지 않고 종료
+            return;
+        }
+        if (isGoal) 
+        {
             return;
         }
         // 스페이스 키를 눌렀으며 && 최대 점프 횟수 (1)에 도달하지 않았다면
@@ -86,7 +91,14 @@ public class PlayerController : MonoBehaviour
         // 사망 상태를 true로 변경
         isDead = true;
     }
+    private void Goal()
+    {
+            GFunc.Log("골이랑 잘만남");
+        playerRigidbody.velocity = Vector2.zero;
+        isGoal = true;
+    }
 
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         // 트리거 콜라이더를 가진 장애물과의 충돌을 감지
@@ -95,6 +107,7 @@ public class PlayerController : MonoBehaviour
             //충돌한 상대방의 태그가 Dead이며 아직 사망하지 않았다면 Die()실행
             Die();
         }
+        
 
     }
 
@@ -105,6 +118,10 @@ public class PlayerController : MonoBehaviour
         //isGrounded = true;
         //isGoing = true;
         jumpCount = 0;
+        if (collision.collider.tag == "Goal" && !isDead)
+        {
+            Goal();
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)

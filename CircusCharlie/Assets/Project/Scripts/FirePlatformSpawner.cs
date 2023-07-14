@@ -10,7 +10,7 @@ public class FirePlatformSpawner : MonoBehaviour
     public float spawnRateMax = 3f;
 
     public Transform bulletPool = default;
-    private Transform target;
+    //private Transform target;
     private float spawnRate;
     private float timeAfterSpawn;
 
@@ -34,8 +34,8 @@ public class FirePlatformSpawner : MonoBehaviour
 
             GameObject bullet = Instantiate(bulletPrefab,
                 transform.position, transform.rotation, bulletPool);
-            bullet.transform.LookAt(target);
-            this.transform.LookAt(target);
+            //bullet.transform.LookAt(target);
+            //this.transform.LookAt(target);
 
 
             spawnRate = Random.Range(spawnRateMin, spawnRateMax);

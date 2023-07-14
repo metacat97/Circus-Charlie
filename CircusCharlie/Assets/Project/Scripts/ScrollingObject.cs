@@ -6,6 +6,8 @@ public class ScrollingObject : MonoBehaviour
 {
     //이동속도
     public float speed;
+    //public bool LDCheck = false; //왼쪽을 누르는지 체크하는 불 값
+    
     //public float maxSpeed;
     //Rigidbody2D rigid;
     //private BoxCollider2D BackGround = default;
@@ -27,6 +29,18 @@ public class ScrollingObject : MonoBehaviour
 
         Vector3 newVelocity = new Vector3(xSpeed, 0f, zSpeed);
         transform.Translate(Vector3.right * -xSpeed);
+        
+        //if (Input.GetKeyDown(KeyCode.A))
+        //{
+        //    //LDCheck = true;    
+        //    GameManager.instance.SetSpeed(true);
+        //}
+        
+        //if (Input.GetKeyUp(KeyCode.A))
+        //{
+        //    //LDCheck = false;
+        //    GameManager.instance.SetSpeed(false);
+        //}
 
 
         //rigid.velocity = newVelocity;

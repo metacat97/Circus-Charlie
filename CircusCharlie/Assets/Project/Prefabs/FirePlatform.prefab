@@ -813,8 +813,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6326585488402362993}
-  - component: {fileID: -5321533679716149164}
   - component: {fileID: 6718491197969382236}
+  - component: {fileID: -8223509910192071683}
   m_Layer: 0
   m_Name: FirePlatform
   m_TagString: Untagged
@@ -841,19 +841,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-5321533679716149164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9004653239409201297}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd546ef612c658741822863440749668, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
 --- !u!114 &6718491197969382236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -871,3 +858,16 @@ MonoBehaviour:
   - {fileID: 558818186046405352}
   - {fileID: 8886516579924021803}
   - {fileID: 5145119574855226096}
+--- !u!114 &-8223509910192071683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9004653239409201297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd546ef612c658741822863440749668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 6
