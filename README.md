@@ -10,7 +10,7 @@
 
 ## Commit Message Convension
 
-Add : 어떤 파일을 추가만 했을때
+<div>Add : 어떤 파일을 추가만 했을때 </div>
 Feat : 새로운 기능(완료된)을 추가했을때
 Fix : 버그를 고친경우
 Docs : 문서를 수정한 경우
